@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <p>Enter 0 - 10 Number</p>
+
+    <input type="text" placeholder="Guest Number" id="number">
+
+    <button id="enter">Enter</button>
+
+    <p id="showNum"></p>
+
+
+
+
+    <script type="text/javascript">
+
+        document.getElementById("enter").onclick = function(){
+
+            var ranNum = Math.floor(Math.random() * 11);
+
+            var enNum = document.getElementById("number").value;
+
+            
+            if(enNum == ranNum){
+                alert("You guessed number is correct");
+            }else{
+                alert("You guessed number is wrong ! \n Random number is = " + ranNum);
+            }
+
+
+
+
+
+        }
+
+        
+    </script>
+    
+</body>
+</html>
